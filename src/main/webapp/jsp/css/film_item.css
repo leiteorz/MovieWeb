@@ -1,0 +1,26 @@
+.film-block{
+    width: 100%;
+    height: 241px;
+}
+
+.film-item{
+    width: 163px;
+    height: 241px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.film-img{
+    overflow: hidden;
+}
+
+.film-item .film-img img {
+    width: 163px;
+    height: 241px;
+}
+
+.film-item .film-img img:hover{
+    transform-origin: center;
+    transform: scale(1.1);
+}

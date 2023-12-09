@@ -25,6 +25,18 @@ JavaWeb课程设计
 
 ![收藏](https://github.com/leiteorz/MovieWeb/blob/master/img/collect.png)
 
+7. 管理员界面
+   
+![管理员](https://github.com/leiteorz/MovieWeb/blob/master/img/admin_user.png)
+
+8. 添加电影
+
+![添加电影](https://github.com/leiteorz/MovieWeb/blob/master/img/add_movie.png)
+
+9. 修改电影
+
+![修改电影](https://github.com/leiteorz/MovieWeb/blob/master/img/edit_movie.png)
+
 ## 数据库创建
 
 首先先去软件的util/JDBCUtil中将name和pwd参数改成你自己数据库的name和pwd

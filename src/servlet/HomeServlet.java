@@ -32,7 +32,6 @@ public class HomeServlet extends HttpServlet {
             req.setAttribute("user", user);
         }
 
-
         /**
          * 从数据库中获取电影信息
          */

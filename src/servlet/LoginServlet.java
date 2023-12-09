@@ -45,8 +45,9 @@ public class LoginServlet extends HttpServlet {
                 // 在ServletContext中存储数据
                 context.setAttribute("user", user);
 
-                // 跳转首页
-                req.getRequestDispatcher("home.do").forward(req, resp);
+                // 管理员跳转管理页面,用户跳转首页
+                if (user.getType() == 1) req.getRequestDispatcher("jsp/admin_user.jsp").forward(req, resp);
+                else req.getRequestDispatcher("home.do").forward(req, resp);
             }
         }catch (Exception e){
             e.printStackTrace();

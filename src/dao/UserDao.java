@@ -30,6 +30,7 @@ public class UserDao {
             user.setSex(rs.getString(3));
             user.setPwd(rs.getString(4));
             user.setUid(rs.getString(5));
+            user.setType(rs.getInt(6));
         }
 
         return user;

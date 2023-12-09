@@ -48,7 +48,7 @@ CREATE TABLE `movies` (
   `type` varchar(50) DEFAULT NULL,
   `description` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb3;
 
 /*Data for the table `movies` */
 
@@ -64,12 +64,13 @@ CREATE TABLE `user` (
   `sex` varchar(2) DEFAULT '男',
   `pwd` varchar(20) DEFAULT NULL,
   `uid` varchar(20) DEFAULT NULL,
+  `type` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`name`,`sex`,`pwd`,`uid`) values (1,'leite','女','123456','leiteorz'),(2,'袁丹阳','女','123','ydy'),(3,'周美彤','女','123','zmt');
+insert  into `user`(`id`,`name`,`sex`,`pwd`,`uid`,`type`) values (1,'leite','女','123456','leiteorz',0),(2,'袁丹阳','女','123','ydy',0),(3,'周美彤','女','123','zmt',0),(4,'admin','男','123','admin',1);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

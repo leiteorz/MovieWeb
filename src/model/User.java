@@ -7,6 +7,8 @@ public class User {
     private String pwd;
     private String uid;
 
+    private int type = 0;
+
     public int getId() {
         return id;
     }
@@ -45,6 +47,14 @@ public class User {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 
     @Override
